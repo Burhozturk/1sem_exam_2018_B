@@ -1,7 +1,9 @@
 //Importerer disse klasser
 
 import java.io.File;
+import java.lang.reflect.Array;
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.Date;
 
 //En public klasse som hedder Media
@@ -15,6 +17,10 @@ public class Media {
     private Date created = new Date();
     //En privat(Kun tilgængelig i klassen)  variabel af typen String, som bliver deklareret
     private String fileName;
+
+
+
+
 
 
     //En constructor uden parametre
@@ -92,4 +98,66 @@ public class Media {
         System.out.println(logToConsolString());
 
     }
+
+    public void logMediaFolder(String foldernavn)
+    {
+        foldernavn="/media";
+        File folder= new File(foldernavn);
+        File[] listofFiles=folder.listFiles();
+        for (int i = 0; i < listofFiles.length; i++) {
+            if (listofFiles[i].isFile()) {
+                System.out.println("File " + listofFiles[i].getName());
+            } else if (listofFiles[i].isDirectory()) {
+                System.out.println("Directory " + listofFiles[i].getName());
+            }
+        }
+
+    }
+
+    public void readMediaFolder(String foldernavn)
+    {
+
+        try {
+            foldernavn="/media";
+            ArrayList<String> alist=new ArrayList<String>();
+
+            File folderNy=new File(foldernavn);
+            File[] listofFilesNT=folderNy.listFiles();
+            for (int i = 0; i < listofFilesNT.length; i++)
+            {
+                if(listofFilesNT[i].isFile())
+                {
+
+                   alist.add(listofFilesNT[i].getName());
+                   String checkForMediaType=listofFilesNT[i].getName();
+                   if(checkForMediaType.contains("jpg"));
+                   {
+                       new Media();
+                   }
+                   if(checkForMediaType.contains("txt"))
+                   {
+                       new Media();
+                   }
+                   if(checkForMediaType.contains("mp4"))
+                   {
+                       new Media();
+                   }
+                   if(checkForMediaType.contains("m4v"))
+                   {
+                       new Media();
+
+                   }
+
+
+                }
+                System.out.println(alist);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+
 }
