@@ -5,4 +5,11 @@ public class Artikel extends Media
     private String author;
     private String articletext;
     private String picture;
+
+
+    public void logToConsol()
+    {
+        System.out.println(logToConsolString());
+
+    }
 }

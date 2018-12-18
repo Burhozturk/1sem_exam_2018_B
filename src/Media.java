@@ -79,4 +79,17 @@ public class Media {
                 ", fileName='" + fileName + '\'' +
                 '}';
     }
+
+
+    public String logToConsolString()
+    {
+        return "Instansvariabel"+getName()+"Klassens medietype"+assetId+"Created"+created;
+
+    }
+
+    public void logToConsol()
+    {
+        System.out.println(logToConsolString());
+
+    }
 }

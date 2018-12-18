@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Artikel</OriginalElement>
+  <nodes>
+    <node x="0.0" y="433.0">Billede</node>
+    <node x="260.0" y="618.0">MediaID</node>
+    <node x="445.0" y="618.0">Test</node>
+    <node x="382.0" y="433.0">Video</node>
+    <node x="612.0" y="618.0">MediaManager</node>
+    <node x="171.5" y="0.0">Media</node>
+    <node x="0.0" y="618.0">Main</node>
+    <node x="191.0" y="444.0">Artikel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Billede" target="Media">
+      <point x="0.0" y="-70.0" />
+      <point x="85.5" y="408.0" />
+      <point x="206.5" y="408.0" />
+      <point x="-70.0" y="191.5" />
+    </edge>
+    <edge source="Artikel" target="Media">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="191.5" />
+    </edge>
+    <edge source="Video" target="Media">
+      <point x="0.0" y="-70.0" />
+      <point x="467.5" y="408.0" />
+      <point x="346.5" y="408.0" />
+      <point x="70.0" y="191.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="141.5" y="554.0" />
+  <SelectedNodes>
+    <node>Artikel</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

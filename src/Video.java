@@ -7,4 +7,11 @@ public class Video extends Media
     private int resolution;
     private String fotoname;
 
+
+    public void logToConsol()
+    {
+        System.out.println(logToConsolString());
+
+    }
+
 }

@@ -6,4 +6,10 @@ public class Billede extends Media
     private int width;
     private int hight;
     private String fotoname;
+
+    public void logToConsol()
+    {
+        System.out.println(logToConsolString());
+
+    }
 }
