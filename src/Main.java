@@ -1,3 +1,5 @@
+import java.sql.SQLException;
+
 /**
  * @author      Burhan Öztürk
  * @version     1.0                (current version number of program)
@@ -18,6 +20,13 @@ public class Main {
 
         //En metode af klassen Test.
         Test.test();
+        Database nyData=new Database();
+        try {
+            nyData.database();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
     }
 }

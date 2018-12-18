@@ -17,6 +17,7 @@ public class Media {
     private Date created = new Date();
     //En privat(Kun tilgængelig i klassen)  variabel af typen String, som bliver deklareret
     private String fileName;
+    ArrayList<String> alist=new ArrayList<String>();
 
 
 
@@ -114,12 +115,16 @@ public class Media {
 
     }
 
+   
+
+
+
     public void readMediaFolder(String foldernavn)
     {
 
         try {
             foldernavn="/media";
-            ArrayList<String> alist=new ArrayList<String>();
+
 
             File folderNy=new File(foldernavn);
             File[] listofFilesNT=folderNy.listFiles();
@@ -128,7 +133,7 @@ public class Media {
                 if(listofFilesNT[i].isFile())
                 {
 
-                   alist.add(listofFilesNT[i].getName());
+                   this.alist.add(listofFilesNT[i].getName());
                    String checkForMediaType=listofFilesNT[i].getName();
                    if(checkForMediaType.contains("jpg"));
                    {

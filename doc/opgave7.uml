@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Artikel</OriginalElement>
+  <nodes>
+    <node x="552.0" y="499.0">Billede</node>
+    <node x="491.0" y="684.0">MediaID</node>
+    <node x="676.0" y="684.0">Test</node>
+    <node x="361.0" y="499.0">Video</node>
+    <node x="0.0" y="825.0">MediaManager</node>
+    <node x="191.00000000000003" y="543.5">Database</node>
+    <node x="244.75000000000003" y="0.0">Media</node>
+    <node x="260.0" y="684.0">Controller</node>
+    <node x="0.0" y="684.0">Main</node>
+    <node x="0.0" y="510.0">Artikel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Billede" target="Media">
+      <point x="0.0" y="-70.0" />
+      <point x="637.5" y="469.0" />
+      <point x="439.875" y="469.0" />
+      <point x="83.625" y="224.5" />
+    </edge>
+    <edge source="Artikel" target="Media">
+      <point x="0.0" y="-59.0" />
+      <point x="85.5" y="469.0" />
+      <point x="272.625" y="469.0" />
+      <point x="-83.625" y="224.5" />
+    </edge>
+    <edge source="Video" target="Media">
+      <point x="0.0" y="-70.0" />
+      <point x="446.5" y="479.0" />
+      <point x="384.125" y="479.0" />
+      <point x="27.875" y="224.5" />
+    </edge>
+    <edge source="Database" target="Media">
+      <point x="0.0" y="-25.5" />
+      <point x="266.0" y="479.0" />
+      <point x="328.375" y="479.0" />
+      <point x="-27.875" y="224.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="199.5" y="128.0" />
+  <SelectedNodes>
+    <node>Artikel</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
