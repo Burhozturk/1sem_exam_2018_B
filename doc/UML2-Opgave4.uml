@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Artikel</OriginalElement>
+  <nodes>
+    <node x="349.0" y="213.0">Billede</node>
+    <node x="260.0" y="375.0">MediaID</node>
+    <node x="445.0" y="375.0">Test</node>
+    <node x="174.0" y="213.0">Video</node>
+    <node x="0.0" y="516.0">MediaManager</node>
+    <node x="175.0" y="0.0">Media</node>
+    <node x="0.0" y="375.0">Main</node>
+    <node x="0.0" y="224.0">Artikel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Billede" target="Media">
+      <point x="0.0" y="-58.5" />
+      <point x="426.5" y="188.0" />
+      <point x="302.5" y="188.0" />
+      <point x="51.0" y="81.5" />
+    </edge>
+    <edge source="Artikel" target="Media">
+      <point x="0.0" y="-47.5" />
+      <point x="77.0" y="188.0" />
+      <point x="200.5" y="188.0" />
+      <point x="-51.0" y="81.5" />
+    </edge>
+    <edge source="Video" target="Media">
+      <point x="0.0" y="-58.5" />
+      <point x="0.0" y="81.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="141.5" y="296.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
