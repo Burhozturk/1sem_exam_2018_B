@@ -16,7 +16,7 @@ public class Database extends Media
                 ("jdbc:mysql://localhost/tv2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "");
 
         System.out.println("Database connected");
-        readMediaFolder("folder");
+        readMediaFolder("123");
 
         // 3) Create a statement
         //HEJr

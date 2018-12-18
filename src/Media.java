@@ -126,9 +126,6 @@ public class Media {
 
     }
 
-   
-
-
 
     public void readMediaFolder(String foldernavn)
     {
@@ -139,7 +136,8 @@ public class Media {
 
             File folderNy=new File(foldernavn);
             File[] listofFilesNT=folderNy.listFiles();
-            for (int i = 0; i < listofFilesNT.length; i++)
+
+            for (int i = 0; i < (listofFilesNT != null ? listofFilesNT.length : 0); i++)
             {
                 if(listofFilesNT[i].isFile())
                 {
