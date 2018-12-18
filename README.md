@@ -149,3 +149,20 @@ Commit ændringerne.
 
 # God arbejdslyst! 
 /Steven, Anders, András 
+
+#Løsning til Opgave 9(Burhan)
+Jeg har lavet et privat variabel i klassen Media
+ private String fileName;
+ 
+ og har tilføjet getters og sætters til den
+ så har jeg lavet if løkker nederst på Media klassen
+ 
+   if(getCreator()=="tv2")
+     {
+         System.out.println("Lavet af tv2");
+     }
+     if(getCreator()=="privat")
+     {
+         System.out.println("Lavet af private personer");
+     }   
+

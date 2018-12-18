@@ -20,6 +20,17 @@ public class Media {
     ArrayList<String> alist=new ArrayList<String>();
 
 
+    private String creator;
+
+    public String getCreator() {
+        return creator;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+
 
 
 
@@ -161,8 +172,19 @@ public class Media {
             e.printStackTrace();
         }
 
+    if(getCreator()=="tv2")
+    {
+        System.out.println("Lavet af tv2");
+    }
+    if(getCreator()=="privat")
+    {
+        System.out.println("Lavet af private personer");
+    }
+
 
     }
+
+
 
 
 }
